@@ -1,5 +1,4 @@
-from detectron2.config import get_cfg
-
-cfg = get_cfg()
-cfg.merge_from_file("configs/mask3d_config.yaml")
-print(cfg.dump())  # Shows full config settings for debugging
+import torch
+print("Torch version:", torch.__version__)
+print("CUDA Available:", torch.cuda.is_available())
+print("CUDA Version:", torch.version.cuda)
